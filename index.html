@@ -21,7 +21,7 @@
     h1 {
       text-align: center;
       margin-top: 20vh;
-      font-size: 6vw; /* scales on mobile */
+      font-size: 6vw;
       z-index: 1;
       position: relative;
       padding: 0 10px;
@@ -29,7 +29,7 @@
 
     p {
       text-align: center;
-      font-size: 4vw; /* scales on mobile */
+      font-size: 4vw;
       z-index: 1;
       position: relative;
       line-height: 1.6;
@@ -40,7 +40,7 @@
 
     .cat {
       position: absolute;
-      width: 20vw; /* relative to viewport width */
+      width: 20vw;
       max-width: 120px;
       min-width: 60px;
       z-index: 2;
@@ -102,26 +102,18 @@
         opacity: 0;
       }
     }
-
-    /* Optional: prevent text selection on sparkles */
-    .sparkle, .glitter {
-      user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
   </style>
 </head>
 <body>
   <h1>Hey you!</h1>
   <p>
     I love coffee<br/>
-    Can't wait to get coffee with you<br/>
-    You're so amazing and so pretty<br/>
-    Let me know when you're free yeah?
+    Can’t wait to get coffee with you<br/>
+    You’re so amazing and pretty<br/>
+    Let me know when you’re free yeah?
   </p>
 
-  <!-- Floating cats -->
+  <!-- Floating cats using your local cat.png file -->
   <img src="cat.png" class="cat" style="left: 10%;" />
   <img src="cat.png" class="cat" style="left: 30%; animation-delay: 2s;" />
   <img src="cat.png" class="cat" style="left: 50%; animation-delay: 4s;" />
@@ -129,7 +121,7 @@
   <img src="cat.png" class="cat" style="left: 90%; animation-delay: 8s;" />
 
   <script>
-    // More sparkles for magic ✨
+    // Extra sparkles for dreaminess
     for (let i = 0; i < 250; i++) {
       const sparkle = document.createElement("div");
       sparkle.className = "sparkle";
